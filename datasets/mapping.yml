@@ -1,0 +1,24 @@
+Insert Account:
+  sf_object: Account
+  fields:
+  - Name
+  lookups:
+    ParentId:
+      table: Account
+      after: Insert Account
+Insert Object_A__c:
+  sf_object: Object_A__c
+  fields:
+  - Name
+  - Player_Name__c
+  lookups:
+    Account__c:
+      table: Account
+Insert Object_B__c:
+  sf_object: Object_B__c
+  fields:
+  - Name
+  - Player_Rank__c
+  lookups:
+    Object_A__c:
+      table: Object_A__c
