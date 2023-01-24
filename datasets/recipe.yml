@@ -1,0 +1,19 @@
+- object: Account
+  count: 10
+  fields:
+      Name:
+        fake: Name
+- object: Object_A__c
+  count: 10
+  fields:
+      Name:
+        fake: Name
+      Player_Name__c:
+        fake: Name
+- object: Object_B__c
+  count: 10
+  fields:
+      Name:
+        fake: Name
+      Player_Rank__c:
+        fake: RandomDigit
