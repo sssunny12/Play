@@ -1,7 +1,8 @@
 Insert Account:
   sf_object: Account
+  action: upsert
+  update_key: AC_Ext_Id__c 
   fields:
-  - id
   - AC_Ext_Id__c
   - Name
   lookups:
@@ -10,15 +11,17 @@ Insert Account:
       after: Insert Account
 Insert Object_A__c:
   sf_object: Object_A__c
+  action: upsert
+  update_key: A_Ext_Id__c
   fields:
-  - id
   - A_Ext_Id__c
   - Name
   - Player_Name__c
 Insert Object_B__c:
   sf_object: Object_B__c
+  action: upsert
+  update_key: B_Ext_Id__c
   fields:
-  - id
   - B_Ext_Id__c
   - Name
   - Player_Rank__c
