@@ -6,7 +6,7 @@ project:
         api_version: '55.0'
     git:
         default_branch: main
-        prefix_feature: feature/001
+        # prefix_feature: feature/001
     source_format: sfdx
 
 tasks:
@@ -25,9 +25,9 @@ tasks:
         options:
             required_org_code_coverage_percent: 75
 
-    github_automerge_feature:
-        options:
-            update_future_releases: True
+    # github_automerge_feature:
+    #     options:
+    #         update_future_releases: True
 
 flows:
     config_dev:
