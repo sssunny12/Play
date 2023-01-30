@@ -1,0 +1,9 @@
+- sf_object: Account
+  api: rest
+  # bulk_mode: parallel
+  load_after: Object_A__c
+
+- sf_object: Account
+  api: rest
+  # bulk_mode: serial
+  load_after: Object_B__c

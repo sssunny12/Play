@@ -1,6 +1,7 @@
 Insert Account:
   sf_object: Account
   fields:
+  - id
   - AC_Ext_Id__c
   - Name
   lookups:
@@ -10,15 +11,14 @@ Insert Account:
 Insert Object_A__c:
   sf_object: Object_A__c
   fields:
+  - id
   - A_Ext_Id__c
   - Name
   - Player_Name__c
-  lookups:
-    Account__c:
-      table: Account
 Insert Object_B__c:
   sf_object: Object_B__c
   fields:
+  - id
   - B_Ext_Id__c
   - Name
   - Player_Rank__c
