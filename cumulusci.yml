@@ -6,7 +6,7 @@ project:
         api_version: '55.0'
     git:
         default_branch: main
-        prefix_feature: feature/
+        prefix_feature: feature/001
     source_format: sfdx
 
 tasks:
