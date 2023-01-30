@@ -5,7 +5,8 @@ project:
         name: Play
         api_version: '55.0'
     git:
-        default_branch: 'main'
+        default_branch: main
+        prefix_feature: feature/
     source_format: sfdx
 
 tasks:
@@ -25,7 +26,8 @@ tasks:
             required_org_code_coverage_percent: 75
 
 flows:
-    config-dev:
+    config_dev:
          steps:
              3:
                 task: load_dataset
+    
